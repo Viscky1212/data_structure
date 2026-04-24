@@ -11,7 +11,10 @@ public class HasAllCodes {
         }
         Set<String> seen = new HashSet<>();
         for (int i = 0; i <= s.length() - k; i++) {
-            seen.add(s.substring(i, i + k));
+            System.out.println("i : "+i);
+            System.out.println("k : "+ k);
+            seen.add(s.substring(i,i + k));
+            System.out.println(seen);
         }
         return seen.size() == (1 << k);
     }
@@ -19,7 +22,7 @@ public class HasAllCodes {
     public static void main(String[] args) {
         HasAllCodes sol = new HasAllCodes();
         String s = "00110110";
-        int k = 2;
+        int k = 3;
 
         System.out.println(sol.hasAllCodes(s, k));
 

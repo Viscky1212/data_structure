@@ -11,8 +11,13 @@ public class FindLength {
         for (int i = n - 1; i >= 0; i--) {
             for (int j = m - 1; j >= 0; j--) {
                 if (A[i] == B[j]){
+                    System.out.println("[A] : " + A[i]);
+                    System.out.println("[B] : " + B[i]);
                     dp[i][j] = 1 + dp[i + 1][j + 1];
+                    System.out.println("hexographical view : "+dp[i][j]);
                     maxLen = Math.max(maxLen,dp[i][j]);
+                    System.out.println("Maximum length :"+maxLen);
+
                 }
             }
         }

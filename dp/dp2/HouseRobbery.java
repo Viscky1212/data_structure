@@ -16,12 +16,18 @@ public class HouseRobbery {
         int prev2 = 0;
 
         for (int i = start; i <= end; i++) {
+            System.out.println("i : "+ i);
             int pic = nums[i] + prev2;
+            System.out.println("pic : "+pic);
             int notPick = prev1;
+            System.out.println("Not pic : "+notPick);
             int curr = Math.max(pic,notPick);
+            System.out.println("current pic : "+curr);
 
             prev2 = prev1;
+            System.out.println("prev2 : " + prev2);
             prev1 =curr;
+            System.out.println("prev1 : " + prev1);
         }
         return prev1;
     }

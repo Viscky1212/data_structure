@@ -5,10 +5,18 @@ public class IsSubsequence {
     public boolean isSubsequence(String s, String t){
         int i = 0, j = 0;
         while (i < s.length() && j < t.length()){
+            System.out.println("ith value : "+i);
+            System.out.println("J value : " + j);
             if (s.charAt(i) == t.charAt(j)) {
+                System.out.println("if  condition matched ");
                 i++;
+                System.out.println("i value after increment :"+i);
             }
-            j++;
+           else {
+                System.out.println("else  condition matched ");
+                j++;
+                System.out.println("j value after increment : " + j) ;
+            }
         }
         return i == s.length();
 
