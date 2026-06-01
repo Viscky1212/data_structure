@@ -77,8 +77,8 @@ class EmailRuleBuilder {
     }
 
     public FormValidator required() {
-        validator.addRule(new RequiredRule(fieldName));
-        validator.addRule(new EmailRule(fieldName));
+       // validator.addRule(new RequiredRule(fieldName));
+       // validator.addRule(new EmailRule(fieldName));
         return validator;
     }
 }
