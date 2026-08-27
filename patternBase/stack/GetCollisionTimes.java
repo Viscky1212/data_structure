@@ -74,7 +74,7 @@ public class GetCollisionTimes {
 //        int[] cars = {10, 8, 5, 3};
 //        int[] speeds = {2, 4, 1, 3};
 
-       // double[] collisionTimes = getCollisionTimes(cars, speeds);
+       // double[] collisionTimes = getCollisionTimes(cars, speeds);curl https://cursor.com/install -fsSL | bash
 
 //        for (double time : collisionTimes) {
 //            System.out.println(time);
