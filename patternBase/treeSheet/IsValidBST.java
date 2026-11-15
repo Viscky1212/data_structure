@@ -31,6 +31,6 @@ public class IsValidBST {
         root.right = new TreeNode(3);
 
         boolean result = isValidBST.isValidBST(root);
-        System.out.println("Is the tree a valid BST? " + result); // Output: true
+        System.out.println("Is the tree a valid BST? " + result); // Output: true   git push -u origin "$(git branch --show-current)"   git push -u origin "$(git branch --show-current)"
     }
 }
